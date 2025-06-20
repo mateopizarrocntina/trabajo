@@ -1,58 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Informate aqui</title>
   <style>
     body {
+      background-color: #ef2cbe;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
       display: flex;
-      justify-content: center;
       flex-direction: column;
       align-items: center;
-      height: 100vh;
-      background-color: #ef2cbe;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin: 0;
-      font-family: sans-serif;
     }
-    .link {
-      width: 600px;
-      height: 60px;
-      background-color: #f275e5;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      border-end-start-radius: 10px;
-      border-end-end-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    }
-
     h1 {
-        color: #f5f5f5;
+      color: white;
+      margin-bottom: 20px;
+    }
+    .video-container {
+      max-width: 350px;
+      width: 50%;
+      margin-bottom: 10px;
+    }
+    blockquote.instagram-media {
+      width: 100% ;
+      max-width: 350px ;
+      margin: 0 auto ;
+      padding: 0 ;
+      border: none ;
+      background: transparent ;
     }
 
     img {
     width: 300px;
-    height: 180px;
+    height: 300px;
     border-radius: 10px;
     margin-right: 20px;
     float: left;
   }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 350px;
+      width: 100%;
+    }
+ 
+    .link {
+      background-color: #f275e5;
+      border-radius: 10px;
+      padding: 15px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      user-select: none;
+    }
   </style>
 </head>
 <body>
-    <a href="https://www.Links de ayuda.com"></a>
-    <h1>Links de ayuda</h1>
-    <img src="https://salud.michoacan.gob.mx/wp-content/uploads/2023/10/f49bba12-59b7-4a50-bada-c8a69fc0e3b4.jpg">
-    <div class="link">Autoexploracion de ceno <br></div>
-    <div class="link">como utilizar reloj inteligente</div>
-    <div class="link">Como utilizar el kit</div>
-    <div class="link">¿Que hacer si notas algo anormal?</div>
+
+  <h1>Links de ayuda</h1>
+
+
+  <div class="links-container">
+    <div class="link">
+      Autoexploracion de seno
+    <img src="mama.jpg" alt="">
+    </div>
+
+    <div class="link">
+      como utilizar reloj inteligente
+
+      <div class="video-container">
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DLG3uX3u_Cb/" data-instgrm-version="14">
+      <a href="https://www.instagram.com/reel/DLG3uX3u_Cb/" target="_blank"></a>
+    </blockquote>
+  </div></div>
+   
+    <div class="link">
+      Como utilizar el kit
+    
+    <div class="video-container">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DLG6mAmMlAI/?igsh=bDZqZGRpdmt5Ymxq" data-instgrm-version="14">
+        <a href="https://www.instagram.com/reel/DLG6mAmMlAI/?igsh=bDZqZGRpdmt5Ymxq" target="_blank"></a>
+      </blockquote>
+
+    </div>
+
+    </div>
+    <div class="link">
+      ¿Que hacer si notas algo anormal?
+    <img src="foto.jpg" alt="">
+    </div>
     <div class="link">12 señales que podrian identificar cancer se mama</div>
+  </div>
+
+  <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
